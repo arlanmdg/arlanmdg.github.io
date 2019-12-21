@@ -8,6 +8,9 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta name="author" content="ARLAN">
 
+	<!-- fullpage.js -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.8/fullpage.min.css" integrity="sha256-+dIh4jG2jQTHZwW81yUo8h6tzXWcNumyNL5XPZbwp1E=" crossorigin="anonymous" />
+
 	<!-- Compiled and minified CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
 	
@@ -31,6 +34,9 @@
 </head>
 
 <body>
+	<!-- fullpage.js -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.8/fullpage.min.js" integrity="sha256-caNcSA0LvOCX90PTuEbwl+V09xPMca13CJUasl+VCtk=" crossorigin="anonymous"></script>
+
 	<!-- Compiled and minified JavaScript -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
     
@@ -59,53 +65,52 @@
 	  </div>
 	</nav>
 
-	<!-- jumbotron -->
-	<div class="jumbotron jumbotron-fluid">
-	  <div class="container animate">
-	    <span class="text1">Welcome</span>
-	    <span class="text2">Official Website</span>
-	  </div>
-	  <div class="down-sign">
-	  	<h6>Explore</h6>
-	  	<a href="#portfolio"><img src="img/icons/arrow-down.png"></a>
-	  </div>
+	<!-- fullpage -->
+	<div id="fullpage">
+	<div class="section">
+		<div class="container">
+			<div class="row">
+				<div class="col animate">
+					<span class="text1">Welcome</span>
+					<span class="text2">Official Website</span>
+				</div>
+			</div>
+		</div>
 	</div>
-
+	<div class="section">
+		<div class="container">
+			<div class="row">
+				<div class="col animate">
+					<span class="text1">Portfolio</span>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="section">
+		<div class="container">
+			<div class="row">
+				<div class="col animate">
+					<span class="text1">Contact</span>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script>
+		fullpage('#fullpage', {
+	//options here
+	autoScrolling:true,
+	scrollHorizontally: true,
+	navigation:true,
+	
+	})
+	</script>
 	<!-- portfolio -->
 	<div class="container">
 		<a name="portfolio"><h1 class="portf">Portfolio</h1></a>
 	</div>
 
 	<!-- card -->
-	<div id="card-port" class="container">
-	<div class="row">
-    <div class="col" align="center">
-      	<div class="card" style="width: 18rem;">
-  			<img src="img/portfolio/1.png" class="card-img-top" alt="...">
-  				<div class="card-body">
-    				<p class="card-text">A cup of moon</p>
-  			</div>
-		</div>
-    </div>
-    <div class="col" align="center">
-      	<div class="card" style="width: 18rem;">
-  			<img src="img/portfolio/10.png" class="card-img-top" alt="...">
-  				<div class="card-body">
-    				<p class="card-text">Ufo</p>
-  			</div>
-		</div>
-    </div>
-    <div class="col" align="center">
-      	<div class="card" style="width: 18rem;">
-  			<img src="img/portfolio/6.png" class="card-img-top" alt="...">
-  				<div class="card-body">
-    				<p class="card-text">Rockin</p>
-  			</div>
-		</div>
-    </div>
-  </div>
-</div>
-</div>
+
 
 </body>
 </html>
