@@ -3,6 +3,7 @@ body{
 	margin: 0;
 	padding: 0;
 }
+/*navbar*/
 .navbar{
 	background-color: #111;
 }
@@ -20,6 +21,7 @@ body{
 .nav-item a{
 	color: #fff !important;
 }
+/*hero*/
 .jumbotron{
 	background: transparent !important;
 	height: 700px !important;
@@ -65,4 +67,15 @@ body{
 	text-align: center;
 	margin-top: 100px;
 	margin-bottom: 100px;
+}
+.card{
+	text-align: center;
+	background-color: #111
+}
+.card img{
+	height: 350px;
+}
+.card-text{
+	font-family: 'Shadows Into Light', cursive;
+	font-size: 30px;
 }
