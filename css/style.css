@@ -64,6 +64,12 @@ body{
     margin-bottom: -40px;
   }
 
-#fp-nav span{
-	background: white !important;
+#fp-nav ul li a span{
+    background: white !important;
+}
+.fp-viewing-section1 #fp-nav ul li a span{
+     background: white;
+}
+#fp-nav ul li a span, .fp-slidesNav ul li a span {
+    background: white;
 }
