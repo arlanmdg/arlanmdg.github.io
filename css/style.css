@@ -2,84 +2,50 @@
 	margin: 0;
 	padding: 0;
 }
-body{
-	background-color: #111 !important; 
+html, body{
+  height: 100%;
+	background-color: #eeeeee !important; 
 }
-/*navbar*/
-.navbar{
-	background-color: #111;
-}
-.navbar-brand{
-	font-family: 'Shadows Into Light', cursive;
-	letter-spacing: 2px;
-}
-.nav-link{
-	font-family: 'Shadows Into Light', cursive;
-	font-size: 20px;
-	color: #fff;
-	text-transform: uppercase;
-	letter-spacing: 2px;
-}
-.nav-item a{
-	color: #fff !important;
+/*------------------
+  3. Header section
+---------------------*/
+
+.header-section {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  top: 0;
+  padding: 0 15px;
+  z-index: 999;
 }
 
-/*animate*/
-.animate{
-  text-align: center;
-  position: absolute;
-  top: 20%;
-  left: 50%;
-  transform: translate(-50%,-50%);
-}
-.animate span{
+/*hero text*/
+.text1 , .text2{
+  font-family: 'Poppins', sans-serif;
   text-transform: uppercase;
-  display: block;
+  text-align: center;
+  letter-spacing: 5px;
+  color: orange;
 }
 .text1{
-  color: white;
-  font-size: 60px;
-  font-weight: 700;
-  letter-spacing: 8px;
-  background-color: #111;
-  position: relative;
-  animation: text 3s 1;
-}
-.text2{
-  font-size: 30px;
-  color: #6ab04c;
+  font-weight: 600;
 }
 
-@keyframes text {
-  0%{
-    color: black;
-    margin-bottom: -40px;
-  }
-  30%{
-    letter-spacing: 25px;
-    margin-bottom: -40px;
-  }
-  85%{
-    letter-spacing: 8px;
-    margin-bottom: -40px;
-  }
-
-#fp-nav ul li {
-  margin: 16px;
+#fp-nav ul li a span, 
+.fp-slidesNav ul li a span {
+    background: orange !important;
 }
 
-#fp-nav ul li a span {
-  width: 14px !important;
-  height: 14px !important;
-  background: transparent;
-  border: 1px solid #565656;
-  margin: 0 !important;
+.bg1{
+  background-image: url(../img/section1.jpg);
+  background-size: cover;
+}
+.bg2{
+  background-image: url(../img/section2.jpg);
+  background-size: cover;
+}
+.bg3{
+  background-image: url(../img/section3.jpg);
+  background-size: cover;
 }
 
-#fp-nav ul li a.active span,
-#fp-nav ul li:hover a.active span {
-  width: 14px;
-  height: 14px;
-  border: 1px solid #020202;
-  background: #020202;
-}

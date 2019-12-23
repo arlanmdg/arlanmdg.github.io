@@ -7,102 +7,74 @@
 	<meta name="keywords" content="arlan, hendrawinata, portfolio, website, creator">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta name="author" content="ARLAN">
-
-	<!-- fullpage.js -->
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.8/fullpage.min.css" integrity="sha256-+dIh4jG2jQTHZwW81yUo8h6tzXWcNumyNL5XPZbwp1E=" crossorigin="anonymous" />
-
-	<!-- Compiled and minified CSS -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-	
-	<!-- google -->
 	<meta name="google-site-verification" content="fOwgUyBNVMTlalT_qhKIBM19mLVK2jbgyyMBbvGoGX4" />
 
-	<!-- favicon -->
-	<link rel="shortcut icon" type="image/png" href="img/favicon.ico"/>
 
-	<!-- syle.css -->
+	<!-- main stylesheet -->
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 
-	<!-- bootstrap -->
+	<!-- stylesheet -->
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-
-	<!-- fontawesome -->
 	<link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-
-	<!-- googlefonts -->
 	<link href="https://fonts.googleapis.com/css?family=Shadows+Into+Light&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.8/fullpage.min.css" integrity="sha256-+dIh4jG2jQTHZwW81yUo8h6tzXWcNumyNL5XPZbwp1E=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+	<link rel="shortcut icon" type="image/png" href="img/favicon.ico"/>
+
 </head>
 
 <body>
-	<!-- fullpage.js -->
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.8/fullpage.min.js" integrity="sha256-caNcSA0LvOCX90PTuEbwl+V09xPMca13CJUasl+VCtk=" crossorigin="anonymous"></script>
 
-	<!-- Compiled and minified JavaScript -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-    
-	<!-- navbar -->
-	<nav class="navbar navbar-expand-lg navbar-dark">
-
-		<div class="container">
-
-	  <a class="navbar-brand" href="index.html">ARLAN</a>
-	  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-	    <span class="navbar-toggler-icon"></span>
-	  </button>
-	  <div class="collapse navbar-collapse" id="navbarNav">
-	    <ul class="navbar-nav ml-auto">
-	      <li class="nav-item">
-	        <a class="nav-link" href="#">Home</a>
-	      </li>
-	      <li class="nav-item">
-	        <a class="nav-link" href="#">Portfolio</a>
-	      </li>
-	      <li class="nav-item">
-	        <a class="nav-link" href="#">Contact</a>
-	      </li>
-	    </ul>
-	    </div>
-	  </div>
-	</nav>
+	<!-- Header Section -->
+	<header>
+	</header>
+	<!-- Header Section end-->
 
 	<!-- fullpage -->
 	<div id="fullpage">
-	<div class="section">
+	<div class="section bg1">
 		<div class="container">
 			<div class="row">
 				<div class="col-sm col-md animate">
-					<span class="text1">Welcome</span>
-					<span class="text2">Official Website</span>
+					<h1 class="text1">Welcome</h1>
+					<h4 class="text2">Official Website</h4>
 				</div>
 			</div>
 		</div>
 	</div>
-	<div class="section">
+	<div class="section bg2">
 		<div class="container">
 			<div class="row">
 				<div class="col-sm col-md animate">
-					<span class="text1">Portfolio</span>
+					<h1 class="text1">Portfolio</h1>
 				</div>
 			</div>
 		</div>
 	</div>
-	<div class="section">
+	<div class="section bg3">
 		<div class="container">
 			<div class="row">
 				<div class="col-sm col-md animate">
-					<span class="text1">Contact</span>
+					<h1 class="text1">Services</h1>
 				</div>
 			</div>
 		</div>
 	</div>
+
+	<!-- fullpage.js -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.8/fullpage.min.js" integrity="sha256-caNcSA0LvOCX90PTuEbwl+V09xPMca13CJUasl+VCtk=" crossorigin="anonymous"></script> 
+
 	<script>
 		fullpage('#fullpage', {
 	//options here
 	autoScrolling:true,
 	scrollHorizontally: true,
 	navigation:true,
+	lazyLoading: true,
 	
 	})
 	</script>
+
 </body>
 </html>
